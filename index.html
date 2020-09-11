@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>Welcome To Baloon Pop</title>
+    
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <!-- google raleway font -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="breadcrumb">
+            <p class="score-count m-auto">You Popped <span class="balloon-count font-weight-bold">0</span> Baloons</p>
+        </div>
+        
+        <div class="row custom-row py-3">
+            <div class="col-lg-5 m-auto">
+                <div class="card hidden shadow-lg success-card text-center" id="congratulations-modal">
+                    <div class="card-body">
+                        <h4 class="card-title font-weight-bold">Congratulations!</h4>
+                        <img src="assets/images/happy.png" class="img-fluid cong-img" alt="winner">
+                        <h4 class="card-title font-weight-bold">You popped all 100 balloons</h4>
+                        <p>You're a Champion!</p>
+                    </div>
+            </div> <!-- card ends here -->
+
+        </div> <!-- col-lg-6 ends here -->
+       
+                    
+        </div> <!-- row ends here -->
+
+        <div class="row custom-row py-3">
+            <div class="col-lg-5 m-auto">
+                <div class="card shadow-lg hidden failure-card text-center" id="failure-modal">
+                    <div class="card-body">
+                        <h4 class="card-title font-weight-bold">Sorry! <i class="fas fa-heart-broken "></i></h4>
+                        <img src="assets/images/sad.png" class="img-fluid failure-img" alt="sad">
+                        <h4 class="card-title">You popped <span class="balloon-count font-weight-bold">0</span> balloons</h4>
+                        <p>Play Again?</p>
+                        <button class="btn btn-outline-success restart-button" type="button" id="restart-button">Yes</button>
+                        <button class="btn btn-outline-danger" type="button" id="end-button">No</button>
+                    </div>
+            </div> <!-- card ends here -->
+        </div> <!-- col-lg-6 ends here -->
+        </div> <!-- row ends here -->
+       
+        <div class="row custom-row py-5">
+            <div class="col-lg-5 m-auto">
+                <div class="card shadow-lg hidden endgame-card text-center" id="end-modal">
+                    <div class="card-body">
+                        <h4 class="card-title font-weight-bold">Sorry to let you go <i class="fas fa-heart-broken "></i></h4>
+                        <img src="assets/images/end.png" class="img-fluid end-img" alt="end-game">
+                        <p class="mt-3 font-weight-bold">We would love to see you again</p>
+                        
+                    </div>
+            </div> <!-- card ends here -->
+        </div> <!-- col-lg-6 ends here -->
+        </div> <!-- row ends here -->
+
+
+        <div class="start-game-window">
+            <div class="text-center">
+            <p class="font-weight-bold display-4">Are You Ready To Start?</p>
+            <button class="btn btn-outline-success btn-lg start-game-button">Let's Play</button>
+           </div>
+        </div>
+        
+        
+        <audio src="assets/sounds/bg-music.mp3" class="bg-music" loop></audio>
+
+      <script src="assets/js/index.js"></script>
+
+
+</body>
+</html>

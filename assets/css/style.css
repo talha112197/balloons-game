@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+
+}
+
+.balloon {
+    position: absolute;
+    width: 6.2rem;
+    height: 12.2rem;
+    top: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hidden {
+    display: none;
+}
+
+.balloon-red {
+    background-image: url(../images/balloon-red.png);
+    
+} 
+
+.balloon-yellow {
+    background-image: url(../images/balloon-yellow.png);
+}
+
+.balloon-green {
+    background-image: url(../images/balloon-green.png);
+}
+
+.balloon-blue {
+    background-image: url(../images/balloon-blue.png);
+}
+
+.balloon-violet {
+    background-image: url(../images/balloon-fiolet.png);
+}
+
+div.custom-row {
+    position: absolute;
+}
+
+
+.breadcrumb {
+    width: 17rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    z-index: 0;
+    
+}
+
+p.score-count {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.success-card {
+    width: 24rem;
+    background-color: white;
+    border-radius: 1rem;
+    height: 27rem;
+    left: 32rem;
+    position: absolute;
+    z-index: 1000;
+    
+}
+
+.failure-card {
+    width: 20rem;
+    background-color: white;
+    border-radius: 1rem;
+    height: 29rem;
+    position: absolute;
+    left: 33.5rem;
+    z-index: 1000;
+}
+
+.endgame-card {
+    width: 20rem;
+    background-color: white;
+    border-radius: 1rem;
+    position: absolute;
+    z-index: 1000;
+    left: 33.5rem;
+}
+
+.cong-img, .failure-img {
+    height: 17rem;
+}
+
+.end-img {
+    background:white;
+}
+
+i.fas.fa-heart-broken {
+    color: red;
+}
+
+.start-game-window {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (min-width:250px) and (max-width:600px) {
+    .breadcrumb {
+        width: 17rem;
+        margin: 0 auto;
+        border-radius: 0.6rem;
+        padding: 1rem;
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+        z-index: 0;
+        
+    }
+    
+    .success-card {
+        width: 20rem;
+        background-color: white;
+        border-radius: 1rem;
+        height: 24rem;
+        left: 6rem;
+        position: absolute;
+        z-index: 1000;
+        
+    }
+    
+    .failure-card {
+        width: 20rem;
+        background-color: white;
+        border-radius: 1rem;
+        height: 22rem;
+        position: absolute;
+        left: 6rem;
+        z-index: 1000;
+    }
+    
+    .endgame-card {
+        width: 20rem;
+        background-color: white;
+        border-radius: 1rem;
+        position: absolute;
+        z-index: 1000;
+        left: 6rem;
+    }
+
+    .cong-img, .failure-img {
+        height: 10rem;
+    }
+}
+
+@media (min-width:601px) and (max-width:989px) {
+    .breadcrumb {
+        width: 17rem;
+        margin: 0 auto;
+        border-radius: 1rem;
+        padding: 1.2rem;
+        position: absolute;
+        bottom: 0;
+        left: 30%;
+        z-index: 0;
+        
+    }
+    
+    .success-card {
+        width: 20rem;
+        background-color: white;
+        border-radius: 1rem;
+        height: 24rem;
+        left: 6rem;
+        position: absolute;
+        z-index: 1000;
+        
+    }
+    
+    .failure-card {
+        width: 20rem;
+        background-color: white;
+        border-radius: 1rem;
+        height: 22rem;
+        position: absolute;
+        left: 15rem;
+        z-index: 1000;
+    }
+    
+    .endgame-card {
+        width: 20rem;
+        background-color: white;
+        border-radius: 1rem;
+        position: absolute;
+        z-index: 1000;
+        left: 15rem;
+    }
+
+    .cong-img, .failure-img {
+        height: 10rem;
+    }
+}
